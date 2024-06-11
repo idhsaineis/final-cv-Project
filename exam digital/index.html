@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon CV</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <img src="image.jpg" alt="Image de Ismail" width="400px" class="image1" />
+    <h1>Ismail ID-HSAINE</h1>
+    <div>
+        <h3>Riad Louizia N°183 BENI YEKHLEF</h3>
+        <h3>Mohammedia</h3>
+        <h3><p class="phone-number" onclick="composeNumber('0716775688')">0716775688</p></h3>
+        <h3><p class="email" onclick="redirectToEmail('idhsaineis@gmail.com')">idhsaineis@gmail.com</p></h3>
+    </div>
+    <hr />
+    <h1 class="first">À propos de moi</h1>
+    <p>
+        Je suis un étudiant en première année de lycée, je viens de découvrir le monde fascinant de la programmation. Après avoir suivi un atelier d'initiation au code, j'ai immédiatement été captivé par les possibilités infinies offertes par cette compétence. Enthousiasmé par la créativité et la logique nécessaires pour résoudre des problèmes complexes, je m'émerveille devant la capacité de créer des applications et des sites web à partir de simples lignes de code. Cette nouvelle passion pour le développement informatique m'a poussé à envisager une carrière dans ce domaine en pleine expansion.
+    </p>
+    <hr />
+    <h1 class="first">APTITUDES</h1>
+    <div class="prg">
+        <ul>
+            <li>Maîtrise des langages HTML et CSS</li>
+            <li>Anglais professionnel international</li>
+        </ul>
+    </div>
+    <hr />
+    <h1 class="first">FORMATION</h1>
+    <div class="prg">
+        <ul>
+            <li>2024 : Tronc commun scientifique</li>
+            <li>2024 : Formation Advanced C1 en Anglais</li>
+        </ul>
+    </div>
+    <hr />
+    <h1 class="first">EXPÉRIENCE</h1>
+    <div class="prg">
+        <ul>
+            <li>Aide-vendeur de produits agro-alimentaires</li>
+            <li>Revendeur de produits alimentaires sportifs</li>
+        </ul>
+    </div>
+    <hr />
+    <h1 class="first">POINTS D'INTÉRÊT</h1>
+    <div class="prg">
+        <ul>
+            <li>Natation</li>
+            <li>Musculation</li>
+            <li>Programmation</li>
+            <li>Voyage</li>
+        </ul>
+    </div>
+    <script>
+        function composeNumber(number) {
+            const phoneRegex = /^[0-9\-+() ]+$/;
+            if (phoneRegex.test(number)) {
+                window.location.href = 'tel:' + number;
+            } else {
+                alert("Numéro de téléphone invalide.");
+            }
+        }
+
+        function redirectToEmail(email) {
+            window.location.href = 'mailto:' + email;
+        }
+    </script>
+</body>
+</html>

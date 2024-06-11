@@ -1,0 +1,33 @@
+.phone-number {
+    color: lightskyblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+h1 {
+    color: #82FF9E;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+div {
+    color: black;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.image1 {
+    border-radius: 50%;
+    border: 4px solid black;
+    float: right;
+}
+.first {
+    text-align: center;
+}
+.prg {
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.email {
+    color: lightskyblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
